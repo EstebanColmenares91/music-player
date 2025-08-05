@@ -1,5 +1,5 @@
 import { DarkTheme, Theme, ThemeProvider } from "@react-navigation/native";
-import { Stack } from "expo-router";
+import { Slot } from "expo-router";
 import "../global.css";
 
 const theme: Theme = {
@@ -17,7 +17,7 @@ const theme: Theme = {
 export default function RootLayout() {
   return (
     <ThemeProvider value={theme}>
-      <Stack />
+      <Slot />
     </ThemeProvider>
   );
 }
